@@ -4,6 +4,7 @@
 {% block title %}Домашняя{% endblock %}
 
 {% block content %}
+    <small>Привет, {{ user.username }}!</small>
     <h1>Это наша домашняя страница.</h1>
     <img class="bookcover" src="{% static 'images/dfp.jpg' %}">
 {% endblock content %}
