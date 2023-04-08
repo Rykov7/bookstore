@@ -4,7 +4,9 @@
 {% block title %}Домашняя{% endblock %}
 
 {% block content %}
-    <small>Привет, {{ user.username }}!</small>
+
+    {% if user.is_authenticated %}<small>Привет, {{ user.username }}!</small>{% else %}Вы не вошли.{% endif %}
+
     <h1>Это наша домашняя страница.</h1>
     <img class="bookcover" src="{% static 'images/dfp.jpg' %}">
 {% endblock content %}
