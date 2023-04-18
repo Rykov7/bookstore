@@ -11,6 +11,14 @@ services:
     environment:
       - "DJANGO_SECRET_KEY=django-insecure-wv1y_wiceear77htx7c8))sigs!-i0d=9b&3#4o#r%r%))ug*2"
       - "DJANGO_DEBUG=True"
+
+      - "SECURE_SSL_REDIRECT=False"
+      - "SECURE_HSTS_SECONDS=0"
+      - "SECURE_HSTS_INCLUDE_SUBDOMAINS=False"
+      - "SECURE_HSTS_PRELOAD=False"
+      - "DJANGO_SESSION_COOKIE_SECURE=False"
+      - "DJANGO_CSRF_COOKIE_SECURE=False"
+
       - "EMAIL_HOST_USER=rykov7ru"
       - "EMAIL_HOST_PASSWORD=dcuiidurmezgmiow"
   db:
