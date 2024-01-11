@@ -7,6 +7,26 @@
 
     {% if user.is_authenticated %}<small>Привет, {{ user.username }}!</small>{% else %}Вы не вошли.{% endif %}
 
-    <h1>Это наша домашняя страница.</h1>
+    <h1>Книжный магазин</h1>
     <img class="bookcover" src="{% static 'images/dfp.jpg' %}">
+
+    <p>
+      Учебный проект <strong>Bookstore</strong> по книге William S. Vincent "Django for Professionals" 4.0 (2022).
+    </p>
+    <p>
+      <a href="https://github.com/Rykov7/bookstore">Репозиторий проекта Bookstore</a>
+    </p>
+
+    <h3>Из интересных тем:</h3>
+
+<ul>
+  <li>регистрация с логином через почту</li>
+  <li>поиск книг</li>
+  <li>кеширование</li>
+  <li>работа с добавлением пользовательских медиа</li>
+  <li>восстановление пароля через почту</li>
+  <li>Docker и PostgreSQL</li>
+</ul>
+<p>Добавление книг увы только в Django-админке.</p>
+
 {% endblock content %}
